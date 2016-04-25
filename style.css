@@ -28,3 +28,9 @@ a:hover {
 	color: #C0C0C0;
 	text-decoration: none;
 }
+
+#loading {
+
+	height: auto;
+	margin: auto;
+}
