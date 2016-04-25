@@ -1,0 +1,30 @@
+body {
+	background-color: #CC0033;
+	font-family: Helvetica;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	
+}
+
+#top {
+	border-bottom: 2px solid white;
+	width: 75%;
+	text-align: center;
+	margin: auto; // centrer l'élément
+}
+
+#main {
+	margin-top: 50px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+}
+
+a:hover {
+	color: #C0C0C0;
+	text-decoration: none;
+}
