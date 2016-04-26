@@ -1,15 +1,24 @@
 body {
+	background-image:url(imagesWeb/Fond_Internet_red2.jpg);
+	background-size: 100% 100%;
 	background-color: #CC0033;
 	font-family: Helvetica;
-	color: white;
+	color: #00e4ff;
 	text-align: center;
 	font-size: 30px;
 	
 }
 
+img{
+	text-align: center;
+	margin: auto; 
+	width: 50%;
+    height: auto;
+}
+
 #top {
-	border-bottom: 2px solid white;
-	width: 75%;
+	border-bottom: 2px solid #00e4ff;
+	width: 65%;
 	text-align: center;
 	margin: auto; // centrer l'élément
 }
@@ -25,7 +34,7 @@ a {
 }
 
 a:hover {
-	color: #C0C0C0;
+	color: #f00000;
 	text-decoration: none;
 }
 
@@ -33,4 +42,17 @@ a:hover {
 
 	height: auto;
 	margin: auto;
+}
+
+#footer {
+	font-family: Helvetica;
+	color: #000000;
+	text-align: center;
+	font-size: 15px;
+}
+
+.imgFooter{
+	height:40px;
+	width:auto;
+	display: inline;
 }
