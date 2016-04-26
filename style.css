@@ -1,12 +1,10 @@
 body {
-	background-image:url(imagesWeb/Fond_Internet_red2.jpg);
+	background-image:url(imagesWeb/Fond_Internet.jpg);
 	background-size: 100% 100%;
-	background-color: #CC0033;
 	font-family: Helvetica;
 	color: #00e4ff;
 	text-align: center;
 	font-size: 30px;
-	
 }
 
 img{
@@ -56,3 +54,33 @@ a:hover {
 	width:auto;
 	display: inline;
 }
+
+#imgPerso{
+	text-align: center;
+	margin: auto; 
+	width: 100px;
+    height: 100px;
+}
+
+#defPerso{
+	display: inline;
+	font-size: 20px;
+}
+
+#sectionTitle{
+	font-family: Helvetica;
+	color: #000000;
+	text-align: left;
+	margin-left: 20%;
+	font-size: 40px;
+}
+
+.NomsTeam{
+	font-family: Helvetica;
+	color: #000000;
+	text-align: left;
+	margin-left: 23%;
+	margin-bottom: 2.5%;
+	font-size: 25px;
+}
+
