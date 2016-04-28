@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title>HeartFeel - About</title>
+		<title>HeartFeel - Contact</title>
 		<link rel="stylesheet" href="style.css" />
 		<meta charset="utf-8" />
 	</head>
@@ -36,8 +36,17 @@
 			<div id="subtitle"><h4>Always feel it!</h4></div>
 
 			<!--Partie centrale-->
-			<div id="sectionTitle"><u>About</u></div>
-			<div id="loading"><img src="imagesWeb/Small/About.gif" alt="Image about"/></div>
+			<div id="sectionTitle"><u>Contact</u></div>
+
+			<form action="contact.php">
+				Name:<br> <input type="text" name="Name" value="Name"><br>
+				Address:<br><input type="email" name="Address" value="Your mail address"><br>
+				Message:<br><textarea type="text" name="Message" value="Your message..." height="35"></textarea>
+				<input type="submit" value="Send e-mail">
+			</form>
+			<?php
+			mail ('childofchaos@live.fr', 'salut flav', 'message de test')
+			?>
 		</div>
 
 

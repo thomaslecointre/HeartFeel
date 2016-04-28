@@ -31,63 +31,27 @@
 		
 		<div id="main">
 			<div id="title">
-				<a href="index.html"><img src="imagesWeb/Logo.png" alt="Logo Heartfeel"/></a>
+				<a href="index.html"><img src="imagesWeb/Small/Logo.gif" alt="Logo Heartfeel"/></a>
 			</div>
 			<div id="subtitle"><h4>Always feel it!</h4></div>
 
 			<!--Partie centrale-->
-			<div id="sectionTitle"><u>The Team</u></div>
-			
-			<div class="NomsTeam">
-				<p>Nugs - Project Manager</p>
-				<table id = "defPerso">
-					<tr>
-						<td class="column" rowspan="3"><img id="imgPerso" src="imagesWeb/ThomasP.png" alt="Photo Nugs"/></td>
-						<td>Thomas Perles, 21</td>
-					</tr>
-					<tr><td>Leading the project</td></tr>
-					<tr><td>and team management </td></tr>
-				</table>
-			</div>
+			<div id="sectionTitle"><u>Contact</u></div>
 
-			<div class="NomsTeam">
-				<p>Thom - Online Documentalist</p>
-				<table id = "defPerso">
-					<tr>
-						<td class="column" rowspan="3"><img id="imgPerso" src="imagesWeb/ThomasL.png" alt="Photo Nugs"/></td>
-						<td>Thomas Lecointre, 21</td>
-					</tr>
-					<tr><td>Present the app in a simple way for users</td></tr>
-					<tr><td>and manage internal documentation</td></tr>
-				</table>
-			</div>
+			<form action="contact.php">
+				Name:<br> <input type="text" name="Name" value="Name"><br>
+				Address:<br><input type="email" name="Address" value="Your mail address"><br>
+				Message:<br><textarea type="text" name="Message" value="Your message..." height="35"></textarea>
+				<input type="submit" value="Send e-mail" >
+			</form>
+			<!--
+			<?php
+			mail ('childofchaos@live.fr', 'salut flav', 'message de test')
+			?>
+			-->
+			<a href="mailto:childofchaos@live.fr">Send e-mail</a>
 
-			<div class="NomsTeam">
-				<p>Flav - Front-End Developper and Communication Manager </p>
-				<table id = "defPerso">
-					<tr>
-						<td class="column" rowspan="3"><img id="imgPerso" src="imagesWeb/FlavienE.png" alt="Photo Nugs"/></td>
-						<td>Flavien Everaert, 21</td>
-					</tr>
-					<tr><td>Creating the design for a</td></tr>
-					<tr><td>simple and functional app</td></tr>
-				</table>
-			</div>
-			
-			<div class="NomsTeam">
-				<p>Mathieu - Software Developper</p>
-					<table id = "defPerso">
-					
-					<tr>
-						<td class="column" rowspan="3"><img id="imgPerso" src="imagesWeb/MathieuA.png" alt="Photo Nugs"/></td>
-						<td>Mathieu Althuser, 23</td>
-					</tr>
-					<tr><td>   </td></tr>
-					<tr><td>   </td></tr>
-					
-				</table>
-			</div>
-			
+
 		</div>
 
 

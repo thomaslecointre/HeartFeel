@@ -43,6 +43,7 @@ a:hover {
 }
 
 #footer {
+	position:bottom;
 	font-family: Helvetica;
 	color: #000000;
 	text-align: center;
@@ -82,5 +83,10 @@ a:hover {
 	margin-left: 23%;
 	margin-bottom: 2.5%;
 	font-size: 25px;
+}
+
+textarea{
+	height:115px;
+	width:250px;
 }
 
