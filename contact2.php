@@ -38,7 +38,7 @@
 			<!--Partie centrale-->
 			<div id="sectionTitle"><u>Contact</u></div>
 
-			<form method="post" action="contact.php">
+			<form method="post" action="contact2.php">
   				<label>Name</label><br>
    				<input name="name" placeholder="Your Name Here"><br>
  				<label>Email</label><br>
@@ -53,6 +53,8 @@
     			$name = $_POST['name'];
    				$email = $_POST['email'];
     			$message = $_POST['message'];
+
+    			mail("flavien.everaert@uha.fr","objet","message","From: flavien.everaert@gmail.com");
 			?>
 			<button id="button"><a href="mailto:flavien.everaert@gmail.com?subject=HeartFeel - Message de <?php echo$name?>&body=<?php echo$message?>
 			%0A 

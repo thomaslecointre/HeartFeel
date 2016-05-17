@@ -23,7 +23,7 @@
 				</a>
 			</td>
 			<td class="column">
-				<a href="contact.html">
+				<a href="contact.php">
 					contact
 				</a>
 			</td>
@@ -38,36 +38,51 @@
 			<!--Partie centrale-->
 			<div id="sectionTitle"><u>Contact</u></div>
 
-			<form action="contact.php">
-				Name:<br> <input type="text" name="Name" value="Name"><br>
-				Address:<br><input type="email" name="Address" value="Your mail address"><br>
-				Message:<br><textarea type="text" name="Message" value="Your message..." height="35"></textarea>
-				<input type="submit" value="Send e-mail" >
+			<form method="post" action="contact.php">
+  				<label>Name</label><br>
+   				<input name="name" placeholder="Your Name Here"><br>
+ 				<label>Email</label><br>
+				<input name="email" type="email" placeholder="Your e-Mail Here"><br>
+				<label>Message</label><br>
+				<textarea name="message" placeholder="Your Message Here" type="text"></textarea><br>
+				<input id="submit" name="submit" type="submit" value="Validate Content" >
+        
 			</form>
-			<!--
+
 			<?php
-			mail ('childofchaos@live.fr', 'salut flav', 'message de test')
+    			$name = $_POST['name'];
+   				$email = $_POST['email'];
+    			$message = $_POST['message'];
 			?>
-			-->
-			<a href="mailto:childofchaos@live.fr">Send e-mail</a>
+			<button id="button"><a href="mailto:flavien.everaert@gmail.com?subject=HeartFeel - Message de <?php echo$name?>&body=<?php echo$message?>
+			%0A 
+			%0A
+			Répondre à <?php echo$email?>">Send Message</a></button>
+			
+
+			
+					
+			<br>
+			<br>
+			<br>
 
 
 		</div>
 
-
+		<div>
+			<a class="imgFooter" href="http://www.appstore.com" target="_blank">
+				<img class="imgFooter" src="imagesWeb/AppStore.png" alt="Image AppStore"/>
+			</a>
+			<a class="imgFooter" href="https://play.google.com/store?hl=fr" target="_blank">
+				<img class="imgFooter" src="imagesWeb/GooglePlay.png" alt="Image GooglePlay"/>
+			</a>
+			<br>
+			<br>
+		</div>
 
 
 		<footer id="footer">
-			<div>
-				<a class="imgFooter" href="http://www.appstore.com" target="_blank">
-					<img class="imgFooter" src="imagesWeb/AppStore.png" alt="Image AppStore"/>
-				</a>
-				<a class="imgFooter" href="https://play.google.com/store?hl=fr" target="_blank">
-					<img class="imgFooter" src="imagesWeb/GooglePlay.png" alt="Image GooglePlay"/>
-				</a>
-			</div>
-
-   			 <p>© Copyright RedPulse - 2016</p>
+			<p>© Copyright RedPulse - 2016</p>
 		</footer>
 	</body>
 </html>
